@@ -63,6 +63,9 @@
     $('heroName').textContent = p.name;
     $('heroTagline').textContent = p.tagline;
     $('draftTag').hidden = !p.draft;
+    if (p.inquiries && $('inquiryList')) {
+      $('inquiryList').innerHTML = p.inquiries.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
+    }
 
     var insta = $('heroInsta'), instaBtn = $('instaBtn');
     if (p.instagram && p.instagram.url) {
@@ -92,10 +95,14 @@
   }
 
   function renderHero() {
-    var w = workById(state.profile.hero) || state.works[0];
-    if (!w || !w.images.length) return;
-    var im = w.images[0];
-    $('heroMedia').innerHTML = imgTag(im, { eager: true }).replace('alt="', 'alt="대표 작품 ');
+    var hi = state.profile.heroImage;
+    var im = hi;
+    if (!im) {
+      var w = workById(state.profile.hero) || state.works[0];
+      if (!w || !w.images.length) return;
+      im = w.images[0];
+    }
+    $('heroMedia').innerHTML = imgTag(im, { eager: true });
   }
 
   /* ---------- 작품 ---------- */
@@ -331,54 +338,6 @@
     }).join('');
   }
 
-  /* ---------- 제작 과정 ---------- */
-
-  var proc = { steps: [], i: 0 };
-
-  function showStep(i) {
-    var n = proc.steps.length;
-    if (!n) return;
-    proc.i = Math.max(0, Math.min(n - 1, i));
-    var s = proc.steps[proc.i];
-    $('pFig').innerHTML = imgTag(s.image, { eager: true }).replace(' fetchpriority="high"', '');
-    $('pInfo').innerHTML = '<p class="num">STEP ' + (proc.i + 1) + ' / ' + n + '</p><h3>' + esc(s.title) + '</h3><p>' + esc(s.text) + '</p>';
-    $('pPrev').disabled = proc.i === 0;
-    $('pNext').disabled = proc.i === n - 1;
-    Array.prototype.forEach.call($('pSteps').children, function (b, k) {
-      var on = k === proc.i;
-      b.classList.toggle('active', on);
-      b.setAttribute('aria-selected', on ? 'true' : 'false');
-      if (on) {
-        // 페이지 전체가 움직이지 않도록 단계 버튼 줄만 가로로 이동
-        var strip = $('pSteps');
-        strip.scrollLeft = b.offsetLeft - (strip.clientWidth - b.offsetWidth) / 2;
-      }
-    });
-    [proc.i + 1].forEach(function (k) { if (proc.steps[k]) { var p = new Image(); p.src = proc.steps[k].image.src; } });
-  }
-
-  function renderProcess(p) {
-    proc.steps = p.steps;
-    $('processIntro').textContent = p.intro;
-    $('pSteps').innerHTML = p.steps.map(function (s, i) {
-      return '<button type="button" class="p-step" role="tab" aria-selected="false" aria-label="' + (i + 1) + '단계 ' + esc(s.title) + '">' + (i + 1) + '</button>';
-    }).join('');
-    $('pSteps').addEventListener('click', function (e) {
-      var b = e.target.closest('.p-step');
-      if (b) showStep(Array.prototype.indexOf.call($('pSteps').children, b));
-    });
-    $('pPrev').addEventListener('click', function () { showStep(proc.i - 1); });
-    $('pNext').addEventListener('click', function () { showStep(proc.i + 1); });
-    var st = null;
-    $('pFig').addEventListener('touchstart', function (e) { st = e.touches[0].clientX; }, { passive: true });
-    $('pFig').addEventListener('touchend', function (e) {
-      if (st == null) return;
-      var dx = e.changedTouches[0].clientX - st; st = null;
-      if (Math.abs(dx) > 50) showStep(proc.i + (dx < 0 ? 1 : -1));
-    }, { passive: true });
-    showStep(0);
-  }
-
   /* ---------- 메뉴 · 현재 위치 ---------- */
 
   function setupNav() {
@@ -424,7 +383,6 @@
     getJSON('data/profile.json'),
     getJSON('data/works.json'),
     getJSON('data/statement.json'),
-    getJSON('data/process.json'),
     getJSON('data/cv.json')
   ]).then(function (r) {
     state.series = r[1].series;
@@ -434,8 +392,7 @@
     renderChips();
     renderWorks();
     renderStatement(r[2]);
-    renderProcess(r[3]);
-    renderCV(r[4]);
+    renderCV(r[3]);
   }).catch(function (err) {
     console.error(err);
     loadError();

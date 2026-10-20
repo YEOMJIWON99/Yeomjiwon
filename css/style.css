@@ -122,23 +122,6 @@ img { display: block; }
 .statement h3 { font-size: 14px; letter-spacing: .12em; color: var(--accent); font-weight: 600; }
 .statement p { margin-top: 4px; font-family: var(--serif); font-size: 18px; line-height: 1.95; color: #2c2622; }
 
-/* process */
-.process { margin-top: 36px; }
-.process-stage { position: relative; display: grid; place-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; min-height: 280px; }
-.p-fig img { width: auto; height: auto; max-width: 100%; max-height: 72svh; margin: 0 auto; }
-.p-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 48px; height: 64px; border: 0; border-radius: 6px; background: rgba(246, 243, 238, .88); font-size: 34px; line-height: 1; cursor: pointer; }
-.p-nav:hover { background: var(--ink); color: var(--bg); }
-.p-nav.prev { left: 8px; }
-.p-nav.next { right: 8px; }
-.p-nav[disabled] { opacity: .35; cursor: default; }
-.p-info { margin-top: 20px; max-width: 720px; }
-.p-info .num { font-size: 14px; letter-spacing: .12em; color: var(--accent); font-weight: 600; }
-.p-info h3 { font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.4; }
-.p-info p { margin-top: 8px; color: #3b342e; }
-.p-steps { margin-top: 20px; display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
-.p-step { flex: none; min-width: 44px; min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); cursor: pointer; font-weight: 600; color: var(--muted); }
-.p-step:hover { color: var(--ink); border-color: var(--ink); }
-.p-step.active { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
 /* cv */
 .cv { margin-top: 32px; display: grid; gap: 36px; }
@@ -218,7 +201,6 @@ img { display: block; }
   .statement p { font-size: 17px; }
   .cv li { grid-template-columns: 1fr; gap: 0; }
   .cv .yr { font-size: 14px; }
-  .p-nav { width: 40px; height: 56px; font-size: 28px; }
   .btn { flex: 1 1 100%; }
   .hero-actions .btn { flex: 1 1 140px; }
   .lb-stage { padding: 0 8px; }
@@ -233,3 +215,6 @@ img { display: block; }
   html { scroll-behavior: auto; }
   * { transition: none !important; animation: none !important; }
 }
+
+.inquiry { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.inquiry li { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-weight: 600; font-size: 15px; }

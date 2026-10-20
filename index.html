@@ -22,7 +22,6 @@
       <nav class="nav" id="nav" aria-label="섹션 이동">
         <a href="#works" data-target="works">작품</a>
         <a href="#statement" data-target="statement">작가 노트</a>
-        <a href="#process" data-target="process">제작 과정</a>
         <a href="#cv" data-target="cv">약력</a>
         <a href="#contact" data-target="contact">연락</a>
       </nav>
@@ -71,22 +70,6 @@
       </div>
     </section>
 
-    <section class="section" id="process" aria-labelledby="h-process">
-      <div class="wrap">
-        <h2 id="h-process">제작 과정 <span class="en">Process</span></h2>
-        <p class="lead" id="processIntro"></p>
-        <div class="process" id="processBox">
-          <div class="process-stage">
-            <button class="p-nav prev" id="pPrev" type="button" aria-label="이전 단계">‹</button>
-            <figure class="p-fig" id="pFig"></figure>
-            <button class="p-nav next" id="pNext" type="button" aria-label="다음 단계">›</button>
-          </div>
-          <div class="p-info" id="pInfo" aria-live="polite"></div>
-          <div class="p-steps" id="pSteps" role="tablist" aria-label="제작 단계"></div>
-        </div>
-      </div>
-    </section>
-
     <section class="section alt" id="cv" aria-labelledby="h-cv">
       <div class="wrap narrow">
         <h2 id="h-cv">약력 <span class="en">CV</span></h2>
@@ -97,7 +80,8 @@
     <section class="section contact" id="contact" aria-labelledby="h-contact">
       <div class="wrap narrow center">
         <h2 id="h-contact">연락 <span class="en">Contact</span></h2>
-        <p class="lead">작품 문의와 전시 제안은 메일이나 인스타그램으로 연락 주세요.</p>
+        <p class="lead">전시 제안, 작품 구매, 공모전 문의는 메일이나 인스타그램으로 연락 주세요.</p>
+        <ul class="inquiry" id="inquiryList" aria-label="문의 종류"></ul>
         <p class="mail"><a id="mailLink" href="#"></a></p>
         <div class="hero-actions center">
           <a class="btn primary" id="mailBtn" href="#">메일 보내기</a>

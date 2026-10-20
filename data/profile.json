@@ -5,8 +5,15 @@
   "role": "전통조각 · 옻칠",
   "roleEn": "Traditional Sculpture · Lacquer",
   "tagline": "상처를 담고, 시간을 들여, 싹을 틔웁니다.",
-  "hero": "yeolmae",
+  "heroImage": {
+    "src": "assets/hero.webp",
+    "w": 1984,
+    "h": 2000,
+    "alt": "붉은 옻칠 표면이 겹겹이 비치는 건칠 함을 가까이서 찍은 사진",
+    "cutout": true
+  },
   "email": "1wonnie@naver.com",
   "instagram": { "handle": "yeom.jiwon", "url": "https://www.instagram.com/yeom.jiwon" },
+  "inquiries": ["전시 제안", "작품 구매", "공모전 문의"],
   "portfolioPdf": ""
 }
