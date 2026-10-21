@@ -448,12 +448,16 @@
   setupWorksEvents();
   setupLightbox();
 
-  Promise.all([
-    getJSON(DATA + 'profile.json'),
-    getJSON(DATA + 'works.json'),
-    getJSON(DATA + 'statement.json'),
-    getJSON(DATA + 'cv.json')
-  ]).then(function (r) {
+  function load(dir) {
+    return Promise.all([
+      getJSON(dir + 'profile.json'),
+      getJSON(dir + 'works.json'),
+      getJSON(dir + 'statement.json'),
+      getJSON(dir + 'cv.json')
+    ]);
+  }
+
+  function show(r) {
     state.series = r[1].series;
     state.works = r[1].works;
     renderProfile(r[0]);
@@ -462,8 +466,18 @@
     renderWorks();
     renderStatement(r[2]);
     renderCV(r[3]);
-  }).catch(function (err) {
+  }
+
+  load(DATA).then(show).catch(function (err) {
     console.error(err);
-    loadError();
+    if (LANG === 'en') {
+      // 영어 데이터(data/en 폴더)가 없으면 한국어 내용으로 대신 보여 주고 안내한다
+      load('data/').then(function (r) {
+        show(r);
+        toast('English files (data/en) were not found, so Korean content is shown.');
+      }).catch(loadError);
+    } else {
+      loadError();
+    }
   });
 })();
