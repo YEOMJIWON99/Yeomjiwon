@@ -1,0 +1,300 @@
+{
+  "series": [
+    {
+      "id": "seed",
+      "title": "Seed Series",
+      "years": "2025–2026",
+      "text": "A series that translates the life of a seed into dry-lacquer vessels. The vessel protects the seed, and is also a space that receives and preserves the pain and memories a life has gone through."
+    },
+    {
+      "id": "ullim",
+      "title": "Resonance (Ullim)",
+      "years": "2025",
+      "text": "Four dry-lacquer vessels made to remember the victims of violence."
+    },
+    {
+      "id": "leak",
+      "title": "Spill Series",
+      "years": "2024",
+      "text": "A series that renders the 2007 Hebei Spirit oil spill in lacquer and najeon (mother-of-pearl inlay), made in the hope that the same disaster will not happen again."
+    }
+  ],
+  "works": [
+    {
+      "id": "tansaeng",
+      "title": "Birth",
+      "series": "seed",
+      "year": "2025",
+      "materials": "lacquer, hemp cloth, yellow ochre, copper foil, aluminum foil, eggshell, tofu (gyochil putty), colored lacquer, gold powder, charcoal powder, dry lacquer, modified technique",
+      "size": "74×34×21cm",
+      "summary": "A large dry-lacquer work holding the struggle of a seed's core to break out of its hard husk, and the explosive energy of life.",
+      "story": "The outside is coated in vermilion and green lacquer, then ground so both colors show together. The roughly treated surface made with tofu putty, gold powder and charcoal powder contrasts dramatically with the inside, where copper foil and eggshell ring a circle over many colors of lacquer. Sinking lacquer and shining metal foil collide in one image, showing the desperate fight of the moment life is born.",
+      "images": [
+        {
+          "src": "assets/works/tansaeng.webp",
+          "thumb": "assets/works/thumbs/tansaeng.webp",
+          "w": 1856,
+          "h": 2304,
+          "alt": "Large oval dry-lacquer work “Birth”, its inside filled with orange and blue lacquer and a band of eggshell",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "sisyphus",
+      "title": "Sisyphus",
+      "series": "seed",
+      "year": "2026",
+      "materials": "lacquer, hemp cloth, yellow ochre, pure silver wire, mother-of-pearl (Mexican shell), copper foil, dry lacquer, modified technique",
+      "size": "19×20×17cm",
+      "summary": "A work that likens the stage where a seed faces the pain of life to Sisyphus, who repeats the same punishment without end.",
+      "story": "Pure silver wire inlaid on black lacquer tangles like barbed wire and recalls thorns, turning the oppression around the seed into a visible form. Inside the vessel, mother-of-pearl and copper foil make another layer of space that continues the lines outside. Wounds taken on the outside pile up as memory within, and the enshrined memory shows itself again on the outside.",
+      "images": [
+        {
+          "src": "assets/works/sisyphus-1.webp",
+          "thumb": "assets/works/thumbs/sisyphus-1.webp",
+          "w": 2040,
+          "h": 2048,
+          "alt": "Spherical dry-lacquer vessel “Sisyphus”, silver wire tangled like thorns over black lacquer (outside)",
+          "caption": "Outside",
+          "cutout": true
+        },
+        {
+          "src": "assets/works/sisyphus-2.webp",
+          "thumb": "assets/works/thumbs/sisyphus-2.webp",
+          "w": 2400,
+          "h": 1942,
+          "alt": "Spherical dry-lacquer vessel “Sisyphus”, silver wire tangled like thorns over black lacquer (inside)",
+          "caption": "Inside"
+        }
+      ]
+    },
+    {
+      "id": "miro",
+      "title": "Labyrinth",
+      "series": "seed",
+      "year": "2026",
+      "materials": "lacquer, hemp cloth, yellow ochre, pure silver leaf, silver powder, thread, dry lacquer, modified technique",
+      "size": "14×13×11cm",
+      "summary": "A work that expresses, through a tangled maze and knots, the resistance and struggle a seed goes through to germinate.",
+      "story": "The thread wound thickly around the rim of the vessel comes from the Gordian knot and the Möbius strip. A labyrinth with no visible start or end symbolizes the structure of life that surrounds the seed. The irregular patterns made by repeatedly applying and grinding the lacquer are traces of wounds that remain in time.",
+      "images": [
+        {
+          "src": "assets/works/miro.webp",
+          "thumb": "assets/works/thumbs/miro.webp",
+          "w": 2048,
+          "h": 1766,
+          "alt": "Dry-lacquer vessel “Labyrinth”, a black round vessel wrapped in thick silver-leafed thread",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "gyeolsil",
+      "title": "Fruiting",
+      "series": "seed",
+      "year": "2026",
+      "materials": "lacquer, hemp cloth, yellow ochre, pure gold leaf, luminous shell, yellow pearl shell (thick), dry lacquer, najeon technique",
+      "size": "11×10.1×9.5cm",
+      "summary": "A work that expresses the process of a seed sprouting, extending branches and bearing fruit.",
+      "story": "The green lacquer symbolizes growth and vitality, and contrasts with the dark, tense colors of earlier works. The cut and wrinkled luminous shell forms a wave spreading outward from one center, showing life expanding outward.",
+      "images": [
+        {
+          "src": "assets/works/gyeolsil.webp",
+          "thumb": "assets/works/thumbs/gyeolsil.webp",
+          "w": 2048,
+          "h": 2034,
+          "alt": "Spherical dry-lacquer vessel “Fruiting”, circles of gold leaf and mother-of-pearl spreading over green lacquer",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "yeolmae",
+      "title": "Fruit",
+      "series": "seed",
+      "year": "2026",
+      "materials": "lacquer, hemp cloth, yellow ochre, aluminum foil, dry lacquer, modified technique",
+      "size": "9×8×7cm",
+      "summary": "A vessel holding the cycle of life, in which a new seed grows inside one fruit and that seed again reaches fruit.",
+      "story": "Gold-colored aluminum foil is laid over yellow lacquer, and by repeating lacquering and grinding the foil is exposed irregularly. The gold appears only in places between the layers of lacquer. It holds the thought that hope does not come only after pain has completely disappeared, but can be found in a life where the traces of wounds remain.",
+      "images": [
+        {
+          "src": "assets/works/yeolmae.webp",
+          "thumb": "assets/works/thumbs/yeolmae.webp",
+          "w": 2048,
+          "h": 2038,
+          "alt": "“Fruit”, a yellow dry-lacquer vessel with spreading gold leaf, opened to show its black inside",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "geunwon",
+      "title": "Origin",
+      "series": "seed",
+      "year": "2026",
+      "materials": "lacquer, hemp cloth, yellow ochre, aluminum foil, egg white, gold powder, dry lacquer, modified technique",
+      "size": "9×7.5×7.5cm",
+      "summary": "The starting point of the Seed Series, expressing the primordial state and original energy before life germinates.",
+      "story": "In the rough, irregular surface and the overlapping colors, generation and decay appear together. As the beginning of life and decay coexist in one cycle, the vessel becomes a space that accepts the border between beginning and end, memory and oblivion.",
+      "images": [
+        {
+          "src": "assets/works/geunwon.webp",
+          "thumb": "assets/works/thumbs/geunwon.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "Dry-lacquer vessel “Origin”, gold powder showing through layers of reddish-brown lacquer",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "nohwa",
+      "title": "Aging",
+      "series": "seed",
+      "year": "2026",
+      "materials": "lacquer, hemp cloth, yellow ochre, pure silver leaf, dry lacquer, modified technique",
+      "size": "26×19×17.5cm",
+      "summary": "A work that expresses the process of drying and wrinkling as moisture leaves, in a vessel shaped like a red bean.",
+      "story": "Pure silver leaf set between the irregular cracks of the bean-colored lacquer shows the wounds as traces of light instead of hiding them. A crack is not a sign of the end but a record of the time a being has lived. Enshrining and mourning a wound is not to stay in the past, but a process of accepting the changed self and moving back into daily life.",
+      "images": [
+        {
+          "src": "assets/works/nohwa.webp",
+          "thumb": "assets/works/thumbs/nohwa.webp",
+          "w": 2048,
+          "h": 2034,
+          "alt": "Bean-shaped dry-lacquer vessel “Aging”, its brown lacquer surface split by gold and silver cracks",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "ullim",
+      "title": "Resonance (Ullim)",
+      "series": "ullim",
+      "year": "2025",
+      "materials": "lacquer, hemp cloth, yellow ochre, lacquer powder, dry lacquer, sprinkling technique",
+      "size": "10×10×10cm × 4 pieces",
+      "summary": "Four dry-lacquer vessels holding the tremor and waves of seeds falling on a surface.",
+      "story": "Lacquer powder in the three primary colors, red, yellow and blue, is sprinkled on the top of each vessel to express the resonance of hope. Countless seeds falling on the black, deep, universe-like lacquer spread as large and small waves and affect one person's world. Remembering the victims of violence, rice, coins and chrysanthemums are placed inside the vessels as an expression of mourning.",
+      "images": [
+        {
+          "src": "assets/works/ullim.webp",
+          "thumb": "assets/works/thumbs/ullim.webp",
+          "w": 1620,
+          "h": 2048,
+          "alt": "“Resonance”, four black dry-lacquer vessels stacked in a row, with circles of lacquer powder spreading on top",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "id": "yuchul-gireum",
+      "title": "Spill Series — Oil",
+      "series": "leak",
+      "year": "2024",
+      "materials": "wood, hemp cloth, lacquer",
+      "size": "15×15cm",
+      "summary": "Marbling on a blue lacquer ground expresses the oil slick that rose on the sea at the time of the accident.",
+      "story": "",
+      "images": [
+        {
+          "src": "assets/works/yuchul-gireum.webp",
+          "thumb": "assets/works/thumbs/yuchul-gireum.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "“Spill Series — Oil”, black stains spreading over blue lacquer",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "yuchul-bada",
+      "title": "Spill Series — Sea",
+      "series": "leak",
+      "year": "2024",
+      "materials": "wood, hemp cloth, lacquer, mother-of-pearl",
+      "size": "15×15cm",
+      "summary": "Based on a photo looking down on oil spread over the sea, reproduced with najeon cutting and lacquer.",
+      "story": "",
+      "images": [
+        {
+          "src": "assets/works/yuchul-bada.webp",
+          "thumb": "assets/works/thumbs/yuchul-bada.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "“Spill Series — Sea”, an oil slick expressed with cut mother-of-pearl on a black lacquer ground",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "yuchul-bae",
+      "title": "Spill Series — Ship",
+      "series": "leak",
+      "year": "2024",
+      "materials": "wood, hemp cloth, lacquer, mother-of-pearl, copper wire, copper foil",
+      "size": "15×15cm",
+      "summary": "The Hebei Spirit tanker, expressed with najeon, copper wire, copper foil and colored lacquer.",
+      "story": "The public remembers the place name in “the Taean oil spill,” but through this work I wanted to recall that the cause of the accident was the tanker.",
+      "images": [
+        {
+          "src": "assets/works/yuchul-bae.webp",
+          "thumb": "assets/works/thumbs/yuchul-bae.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "“Spill Series — Ship”, a tanker on a black ground with streams of mother-of-pearl oil flowing down",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "yuchul-saram",
+      "title": "Spill Series — People",
+      "series": "leak",
+      "year": "2024",
+      "materials": "wood, hemp cloth, lacquer, mother-of-pearl, quail eggshell",
+      "size": "15×15cm",
+      "summary": "A volunteer removing spilled oil with a long pole, expressed in mother-of-pearl and eggshell.",
+      "story": "The rocks on the shore are made by fitting together two kinds of shell and cutting them in a wrinkled pattern, while the rocks at the back are cut only at their outline with a jigsaw to bring out the feel of Korean ink painting. The volunteer and the oil-absorbing paper are made from white quail eggshell, to set them apart from the mother-of-pearl.",
+      "images": [
+        {
+          "src": "assets/works/yuchul-saram.webp",
+          "thumb": "assets/works/thumbs/yuchul-saram.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "“Spill Series — People”, a person removing oil on rocks of mother-of-pearl, made with eggshell",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "yuchul-sae",
+      "title": "Spill Series — Bird",
+      "series": "leak",
+      "year": "2024",
+      "materials": "wood, hemp cloth, lacquer, mother-of-pearl, gyochil putty (tofu)",
+      "size": "28×38cm",
+      "summary": "A bird that was contaminated by the spilled crude oil and died unable to fly, expressed in najeon made from shell.",
+      "story": "Feathers covered in oil are in black lacquer, and the parts without oil are in najeon. The background, except for the bird, is treated thick and rough with gyochil, a mix of tofu and black lacquer, to contrast sharply with the mirror-smooth, shining black lacquer (the oil on the bird).",
+      "images": [
+        {
+          "src": "assets/works/yuchul-sae.webp",
+          "thumb": "assets/works/thumbs/yuchul-sae.webp",
+          "w": 1856,
+          "h": 2304,
+          "alt": "“Spill Series — Bird”, a bird of mother-of-pearl on a rough gray gyochil background",
+          "caption": "",
+          "cutout": true
+        }
+      ]
+    }
+  ]
+}

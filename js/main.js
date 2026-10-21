@@ -17,6 +17,72 @@
     });
   }
 
+
+  /* ---------- 언어 (ko / en) ---------- */
+
+  var STR = {
+    ko: {
+      skip: '본문 바로가기', top: '맨 위로', nav_works: '작품', nav_statement: '작가 노트', nav_cv: '약력', nav_contact: '연락',
+      h_works_en: 'Works', h_statement_en: 'Statement', h_cv_en: 'CV', h_contact_en: 'Contact',
+      view_works: '작품 보기', insta: '인스타그램', series_aria: '연작 선택', view_aria: '보기 방식',
+      view_large: '크게 보기', view_grid: '모아 보기', loading: '불러오는 중…',
+      contact_lead: '전시 제안, 작품 구매, 공모전 문의는 메일이나 인스타그램으로 연락 주세요.',
+      inq_aria: '문의 종류', mail_send: '메일 보내기', mail_copy: '메일 주소 복사', pdf: '포트폴리오 PDF',
+      footer: '© 2026 염지원. 모든 작품 이미지의 저작권은 작가에게 있습니다.',
+      lb_aria: '작품 크게 보기', zoom: '확대', unzoom: '축소', close: '닫기', close_txt: '닫기 ×', prev: '이전 작품', next: '다음 작품',
+      draft: '초안 미리보기 · 문구와 사진은 확인 전입니다', nav_aria: '섹션 이동', menu: '메뉴', menu_close: '닫기',
+      all: '전체', big: ' 크게 보기', pending: '사진을 준비하고 있습니다', pending_s: '사진 준비 중', story: '작품 이야기',
+      todo: '추가 예정', copied: '메일 주소를 복사했습니다', insta_at: '인스타그램 @',
+      err: '내용을 불러오지 못했습니다. 파일을 더블클릭해서 연 경우 데이터가 막힐 수 있습니다. GitHub Pages 주소로 보거나, 이 폴더에서 <code>python -m http.server</code> 실행 후 <code>http://localhost:8000</code>으로 열어 주세요.',
+      desc: '염지원의 포트폴리오. 건칠 함 작업으로 고통의 기억을 담아 봉안하고 희망으로 승화시키는 옻칠 작가.',
+      other: 'EN', otherHref: '?lang=en', otherLang: 'en'
+    },
+    en: {
+      skip: 'Skip to content', top: 'Back to top', nav_works: 'Works', nav_statement: 'Statement', nav_cv: 'CV', nav_contact: 'Contact',
+      h_works_en: '', h_statement_en: '', h_cv_en: '', h_contact_en: '',
+      view_works: 'View works', insta: 'Instagram', series_aria: 'Choose a series', view_aria: 'View mode',
+      view_large: 'Large', view_grid: 'Grid', loading: 'Loading…',
+      contact_lead: 'For exhibition proposals, purchases and open calls, please contact me by email or Instagram.',
+      inq_aria: 'Inquiry types', mail_send: 'Send email', mail_copy: 'Copy email address', pdf: 'Portfolio PDF',
+      footer: '© 2026 Yeom Jiwon. All rights to the images of the works belong to the artist.',
+      lb_aria: 'Work viewer', zoom: 'Zoom in', unzoom: 'Zoom out', close: 'Close', close_txt: 'Close ×', prev: 'Previous work', next: 'Next work',
+      draft: 'Draft preview · text and photos are not yet confirmed', nav_aria: 'Sections', menu: 'Menu', menu_close: 'Close',
+      all: 'All', big: ' (view larger)', pending: 'Photo coming soon', pending_s: 'Photo coming soon', story: 'About this work',
+      todo: 'To be added', copied: 'Email address copied', insta_at: 'Instagram @',
+      err: 'Could not load the content. If you opened the file by double-clicking, the data may be blocked. Please view it on GitHub Pages, or run <code>python -m http.server</code> in this folder and open <code>http://localhost:8000</code>.',
+      desc: 'Portfolio of Yeom Jiwon, a lacquer artist who enshrines the memory of pain in dry-lacquer vessels and lets it rise into hope.',
+      other: '한국어', otherHref: '?lang=ko', otherLang: 'ko'
+    }
+  };
+
+  var LANG = 'ko';
+  try {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q === 'en' || q === 'ko') { LANG = q; localStorage.setItem('lang', q); }
+    else { LANG = localStorage.getItem('lang') === 'en' ? 'en' : 'ko'; }
+  } catch (e) {
+    var m0 = /[?&]lang=(en|ko)/.exec(location.search);
+    if (m0) LANG = m0[1];
+  }
+  var T = STR[LANG];
+  var DATA = LANG === 'en' ? 'data/en/' : 'data/';
+
+  function applyStatic() {
+    document.documentElement.lang = LANG;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-i18n]'), function (el) {
+      el.textContent = T[el.getAttribute('data-i18n')];
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-i18n-aria]'), function (el) {
+      el.setAttribute('aria-label', T[el.getAttribute('data-i18n-aria')]);
+    });
+    var m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', T.desc);
+    $('menuBtn').textContent = T.menu;
+    var b = $('langBtn');
+    b.textContent = T.other; b.setAttribute('href', T.otherHref); b.setAttribute('lang', T.otherLang); b.setAttribute('hreflang', T.otherLang);
+    Array.prototype.forEach.call(document.querySelectorAll('.en'), function (el) { el.hidden = !el.textContent; });
+  }
+
   var toastTimer;
   function toast(msg) {
     var el = $('toast');
@@ -58,9 +124,12 @@
 
   function renderProfile(p) {
     state.profile = p;
-    document.title = p.name + ' | ' + p.role;
+    var nm0 = LANG === 'en' ? (p.nameEn || p.name) : p.name;
+    document.title = nm0 + ' | ' + p.role;
+    var nm = LANG === 'en' ? (p.nameEn || p.name) : p.name;
+    $('brand').textContent = nm;
     $('heroEyebrow').textContent = p.roleEn;
-    $('heroName').textContent = p.name;
+    $('heroName').textContent = nm;
     $('heroTagline').textContent = p.tagline;
     $('draftTag').hidden = !p.draft;
     if (p.inquiries && $('inquiryList')) {
@@ -71,7 +140,7 @@
     if (p.instagram && p.instagram.url) {
       insta.href = p.instagram.url;
       instaBtn.href = p.instagram.url;
-      instaBtn.textContent = '인스타그램 @' + p.instagram.handle;
+      instaBtn.textContent = T.insta_at + p.instagram.handle;
     } else {
       insta.hidden = true; instaBtn.hidden = true;
     }
@@ -81,7 +150,7 @@
     $('mailLink').textContent = p.email;
     $('mailBtn').href = mail;
     $('copyBtn').addEventListener('click', function () {
-      var done = function () { toast('메일 주소를 복사했습니다'); };
+      var done = function () { toast(T.copied); };
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(p.email).then(done, function () { toast(p.email); });
       } else { toast(p.email); }
@@ -110,7 +179,7 @@
   function renderChips() {
     var counts = { all: state.works.length };
     state.works.forEach(function (w) { counts[w.series] = (counts[w.series] || 0) + 1; });
-    var html = '<button type="button" class="chip active" data-series="all">전체 ' + counts.all + '</button>' +
+    var html = '<button type="button" class="chip active" data-series="all">' + T.all + ' ' + counts.all + '</button>' +
       state.series.map(function (s) {
         return '<button type="button" class="chip" data-series="' + esc(s.id) + '">' + esc(s.title) + ' ' + (counts[s.id] || 0) + '</button>';
       }).join('');
@@ -155,13 +224,13 @@
         media = w.images.map(function (im, i) {
           var eager = !firstImgDone; firstImgDone = true;
           return '<figure>' +
-            '<button type="button" class="zoom-btn" data-work="' + esc(w.id) + '" data-i="' + i + '" aria-label="' + esc(w.title) + ' 크게 보기">' +
+            '<button type="button" class="zoom-btn" data-work="' + esc(w.id) + '" data-i="' + i + '" aria-label="' + esc(w.title) + T.big + '">' +
             imgTag(im, { eager: eager }) + '</button>' +
             (im.caption ? '<figcaption class="img-cap">' + esc(im.caption) + '</figcaption>' : '') +
           '</figure>';
         }).join('');
       } else {
-        media = '<div class="pending">〈' + esc(w.title) + '〉 사진을 준비하고 있습니다</div>';
+        media = '<div class="pending">' + (LANG === 'ko' ? '〈' + esc(w.title) + '〉 ' : esc(w.title) + ': ') + T.pending + '</div>';
       }
       var s = seriesById(w.series);
       return '<article class="work" id="work-' + esc(w.id) + '">' +
@@ -174,7 +243,7 @@
           '</div>' +
           '<div>' +
             '<p class="work-summary">' + esc(w.summary) + '</p>' +
-            (w.story ? '<details class="more"><summary>작품 이야기</summary><p>' + esc(w.story) + '</p></details>' : '') +
+            (w.story ? '<details class="more"><summary>' + T.story + '</summary><p>' + esc(w.story) + '</p></details>' : '') +
           '</div>' +
         '</div>' +
       '</article>';
@@ -185,11 +254,11 @@
       if (w.images.length) {
         inner = '<span class="tile-img">' + imgTag(w.images[0], { thumb: true }) + '</span>';
       } else {
-        inner = '<span class="tile-img"><span class="pending">사진 준비 중</span></span>';
+        inner = '<span class="tile-img"><span class="pending">' + T.pending_s + '</span></span>';
       }
       var label = '<span class="tile-title">' + esc(w.title) + '</span><span class="tile-meta">' + esc(w.year) + (w.size ? ' · ' + esc(w.size) : '') + '</span>';
       if (!w.images.length) return '<div class="' + cls + '" style="cursor:default">' + inner + label + '</div>';
-      return '<button type="button" class="' + cls + '" data-work="' + esc(w.id) + '" data-i="0" aria-label="' + esc(w.title) + ' 크게 보기">' + inner + label + '</button>';
+      return '<button type="button" class="' + cls + '" data-work="' + esc(w.id) + '" data-i="0" aria-label="' + esc(w.title) + T.big + '">' + inner + label + '</button>';
     }).join('');
   }
 
@@ -246,7 +315,7 @@
       (im.caption ? ' · ' + esc(im.caption) : '') +
       '<br>' + esc([w.year, w.materials, w.size].filter(Boolean).join(' · '));
     $('lightbox').classList.remove('zoomed');
-    $('lbZoom').textContent = '확대';
+    $('lbZoom').textContent = T.zoom;
     $('lbStage').scrollTo(0, 0);
     [lb.i + 1, lb.i - 1].forEach(function (k) {
       var nx = state.flat[(k + n) % n];
@@ -271,7 +340,7 @@
   function toggleZoom() {
     var box = $('lightbox');
     var on = box.classList.toggle('zoomed');
-    $('lbZoom').textContent = on ? '축소' : '확대';
+    $('lbZoom').textContent = on ? T.unzoom : T.zoom;
     var st = $('lbStage');
     if (on) {
       requestAnimationFrame(function () {
@@ -333,7 +402,7 @@
         ? '<ul>' + g.items.map(function (it) {
             return '<li><span class="yr">' + esc(it.year) + '</span><span>' + esc(it.text) + '</span></li>';
           }).join('') + '</ul>'
-        : '<p class="todo">추가 예정</p>';
+        : '<p class="todo">' + T.todo + '</p>';
       return '<div><h3>' + esc(g.title) + '</h3>' + items + '</div>';
     }).join('');
   }
@@ -345,13 +414,13 @@
     btn.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.textContent = open ? '닫기' : '메뉴';
+      btn.textContent = open ? T.menu_close : T.menu;
     });
     nav.addEventListener('click', function (e) {
       if (e.target.closest('a')) {
         nav.classList.remove('open');
         btn.setAttribute('aria-expanded', 'false');
-        btn.textContent = '메뉴';
+        btn.textContent = T.menu;
       }
     });
 
@@ -371,19 +440,19 @@
   /* ---------- 시작 ---------- */
 
   function loadError() {
-    $('worksLarge').innerHTML = '<p class="empty wrap">내용을 불러오지 못했습니다. 파일을 더블클릭해서 연 경우 데이터가 막힐 수 있습니다. ' +
-      'GitHub Pages 주소로 보거나, 이 폴더에서 <code>python -m http.server</code> 실행 후 <code>http://localhost:8000</code>으로 열어 주세요.</p>';
+    $('worksLarge').innerHTML = '<p class="empty wrap">' + T.err + '</p>';
   }
 
+  applyStatic();
   setupNav();
   setupWorksEvents();
   setupLightbox();
 
   Promise.all([
-    getJSON('data/profile.json'),
-    getJSON('data/works.json'),
-    getJSON('data/statement.json'),
-    getJSON('data/cv.json')
+    getJSON(DATA + 'profile.json'),
+    getJSON(DATA + 'works.json'),
+    getJSON(DATA + 'statement.json'),
+    getJSON(DATA + 'cv.json')
   ]).then(function (r) {
     state.series = r[1].series;
     state.works = r[1].works;

@@ -1,0 +1,26 @@
+{
+  "draft": false,
+  "name": "염지원",
+  "nameEn": "Yeom Jiwon",
+  "role": "Traditional Sculpture · Lacquer",
+  "roleEn": "Traditional Sculpture · Lacquer",
+  "tagline": "Holding the wound, taking time, and letting a sprout rise.",
+  "heroImage": {
+    "src": "assets/hero.webp",
+    "w": 1984,
+    "h": 2000,
+    "alt": "Close-up of a dry-lacquer vessel whose red lacquer surface shows layer upon layer",
+    "cutout": true
+  },
+  "email": "1wonnie@naver.com",
+  "instagram": {
+    "handle": "yeom.jiwon",
+    "url": "https://www.instagram.com/yeom.jiwon"
+  },
+  "inquiries": [
+    "Exhibition proposals",
+    "Purchase inquiries",
+    "Open calls"
+  ],
+  "portfolioPdf": ""
+}

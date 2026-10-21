@@ -13,18 +13,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip" href="#works">본문 바로가기</a>
+  <a class="skip" href="#works" data-i18n="skip">본문 바로가기</a>
 
   <header class="topbar" id="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#top" aria-label="맨 위로">염지원</a>
+      <a class="brand" href="#top" id="brand" data-i18n-aria="top" aria-label="맨 위로">염지원</a>
       <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">메뉴</button>
-      <nav class="nav" id="nav" aria-label="섹션 이동">
-        <a href="#works" data-target="works">작품</a>
-        <a href="#statement" data-target="statement">작가 노트</a>
-        <a href="#cv" data-target="cv">약력</a>
-        <a href="#contact" data-target="contact">연락</a>
+      <nav class="nav" id="nav" data-i18n-aria="nav_aria" aria-label="섹션 이동">
+        <a href="#works" data-target="works" data-i18n="nav_works">작품</a>
+        <a href="#statement" data-target="statement" data-i18n="nav_statement">작가 노트</a>
+        <a href="#cv" data-target="cv" data-i18n="nav_cv">약력</a>
+        <a href="#contact" data-target="contact" data-i18n="nav_contact">연락</a>
       </nav>
+      <a class="lang-btn" id="langBtn" href="?lang=en" hreflang="en" lang="en">EN</a>
     </div>
   </header>
 
@@ -36,8 +37,8 @@
         <h1 id="heroName">&nbsp;</h1>
         <p class="tagline" id="heroTagline"></p>
         <div class="hero-actions">
-          <a class="btn primary" href="#works">작품 보기</a>
-          <a class="btn" id="heroInsta" href="#contact" target="_blank" rel="noopener">인스타그램</a>
+          <a class="btn primary" href="#works" data-i18n="view_works">작품 보기</a>
+          <a class="btn" id="heroInsta" href="#contact" target="_blank" rel="noopener" data-i18n="insta">인스타그램</a>
         </div>
       </div>
     </section>
@@ -45,18 +46,18 @@
     <section class="section" id="works" aria-labelledby="h-works">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="h-works">작품 <span class="en">Works</span></h2>
+          <h2 id="h-works"><span data-i18n="nav_works">작품</span> <span class="en" data-i18n="h_works_en">Works</span></h2>
           <div class="controls">
-            <div class="chips" id="seriesChips" role="group" aria-label="연작 선택"></div>
-            <div class="view-toggle" role="group" aria-label="보기 방식">
-              <button type="button" class="vt active" data-view="large" aria-pressed="true">크게 보기</button>
-              <button type="button" class="vt" data-view="grid" aria-pressed="false">모아 보기</button>
+            <div class="chips" id="seriesChips" role="group" data-i18n-aria="series_aria" aria-label="연작 선택"></div>
+            <div class="view-toggle" role="group" data-i18n-aria="view_aria" aria-label="보기 방식">
+              <button type="button" class="vt active" data-view="large" aria-pressed="true" data-i18n="view_large">크게 보기</button>
+              <button type="button" class="vt" data-view="grid" aria-pressed="false" data-i18n="view_grid">모아 보기</button>
             </div>
           </div>
         </div>
         <p class="series-text" id="seriesText"></p>
       </div>
-      <div class="works-large" id="worksLarge"><p class="loading wrap">불러오는 중…</p></div>
+      <div class="works-large" id="worksLarge"><p class="loading wrap" data-i18n="loading">불러오는 중…</p></div>
       <div class="wrap">
         <div class="works-grid" id="worksGrid" hidden></div>
       </div>
@@ -64,7 +65,7 @@
 
     <section class="section alt" id="statement" aria-labelledby="h-statement">
       <div class="wrap narrow">
-        <h2 id="h-statement">작가 노트 <span class="en">Statement</span></h2>
+        <h2 id="h-statement"><span data-i18n="nav_statement">작가 노트</span> <span class="en" data-i18n="h_statement_en">Statement</span></h2>
         <blockquote class="quote" id="quote"></blockquote>
         <div class="statement" id="statementBody"></div>
       </div>
@@ -72,22 +73,22 @@
 
     <section class="section alt" id="cv" aria-labelledby="h-cv">
       <div class="wrap narrow">
-        <h2 id="h-cv">약력 <span class="en">CV</span></h2>
+        <h2 id="h-cv"><span data-i18n="nav_cv">약력</span> <span class="en" data-i18n="h_cv_en">CV</span></h2>
         <div class="cv" id="cvBody"></div>
       </div>
     </section>
 
     <section class="section contact" id="contact" aria-labelledby="h-contact">
       <div class="wrap narrow center">
-        <h2 id="h-contact">연락 <span class="en">Contact</span></h2>
-        <p class="lead">전시 제안, 작품 구매, 공모전 문의는 메일이나 인스타그램으로 연락 주세요.</p>
-        <ul class="inquiry" id="inquiryList" aria-label="문의 종류"></ul>
+        <h2 id="h-contact"><span data-i18n="nav_contact">연락</span> <span class="en" data-i18n="h_contact_en">Contact</span></h2>
+        <p class="lead" data-i18n="contact_lead">전시 제안, 작품 구매, 공모전 문의는 메일이나 인스타그램으로 연락 주세요.</p>
+        <ul class="inquiry" id="inquiryList" data-i18n-aria="inq_aria" aria-label="문의 종류"></ul>
         <p class="mail"><a id="mailLink" href="#"></a></p>
         <div class="hero-actions center">
-          <a class="btn primary" id="mailBtn" href="#">메일 보내기</a>
-          <button class="btn" id="copyBtn" type="button">메일 주소 복사</button>
+          <a class="btn primary" id="mailBtn" href="#" data-i18n="mail_send">메일 보내기</a>
+          <button class="btn" id="copyBtn" type="button" data-i18n="mail_copy">메일 주소 복사</button>
           <a class="btn" id="instaBtn" href="#" target="_blank" rel="noopener">인스타그램 @</a>
-          <a class="btn" id="pdfBtn" href="#" hidden download>포트폴리오 PDF</a>
+          <a class="btn" id="pdfBtn" href="#" hidden download data-i18n="pdf">포트폴리오 PDF</a>
         </div>
       </div>
     </section>
@@ -95,26 +96,26 @@
 
   <footer class="footer">
     <div class="wrap center">
-      <p>© 2026 염지원. 모든 작품 이미지의 저작권은 작가에게 있습니다.</p>
+      <p data-i18n="footer">© 2026 염지원. 모든 작품 이미지의 저작권은 작가에게 있습니다.</p>
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="작품 크게 보기" hidden>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-aria="lb_aria" aria-label="작품 크게 보기" hidden>
     <div class="lb-bar">
       <div class="lb-title" id="lbTitle"></div>
       <div class="lb-count" id="lbCount"></div>
-      <button class="lb-btn" id="lbZoom" type="button">확대</button>
-      <button class="lb-btn close" id="lbClose" type="button" aria-label="닫기">닫기 ×</button>
+      <button class="lb-btn" id="lbZoom" type="button" data-i18n="zoom">확대</button>
+      <button class="lb-btn close" id="lbClose" type="button" data-i18n-aria="close" aria-label="닫기"><span data-i18n="close_txt">닫기 ×</span></button>
     </div>
-    <button class="lb-arrow prev" id="lbPrev" type="button" aria-label="이전 작품">‹</button>
+    <button class="lb-arrow prev" id="lbPrev" type="button" data-i18n-aria="prev" aria-label="이전 작품">‹</button>
     <div class="lb-stage" id="lbStage"><img id="lbImg" alt=""></div>
-    <button class="lb-arrow next" id="lbNext" type="button" aria-label="다음 작품">›</button>
+    <button class="lb-arrow next" id="lbNext" type="button" data-i18n-aria="next" aria-label="다음 작품">›</button>
     <div class="lb-cap" id="lbCap"></div>
   </div>
 
-  <div class="draft-tag" id="draftTag" hidden>초안 미리보기 · 문구와 사진은 확인 전입니다</div>
+  <div class="draft-tag" id="draftTag" hidden data-i18n="draft">초안 미리보기 · 문구와 사진은 확인 전입니다</div>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-  <noscript><p class="noscript">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+  <noscript><p class="noscript">이 페이지는 JavaScript가 필요합니다. / This page requires JavaScript.</p></noscript>
   <script src="js/main.js"></script>
 </body>
 </html>

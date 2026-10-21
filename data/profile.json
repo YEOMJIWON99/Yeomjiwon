@@ -1,5 +1,5 @@
 {
-  "draft": true,
+  "draft": false,
   "name": "염지원",
   "nameEn": "Yeom Jiwon",
   "role": "전통조각 · 옻칠",
@@ -13,7 +13,14 @@
     "cutout": true
   },
   "email": "1wonnie@naver.com",
-  "instagram": { "handle": "yeom.jiwon", "url": "https://www.instagram.com/yeom.jiwon" },
-  "inquiries": ["전시 제안", "작품 구매", "공모전 문의"],
+  "instagram": {
+    "handle": "yeom.jiwon",
+    "url": "https://www.instagram.com/yeom.jiwon"
+  },
+  "inquiries": [
+    "전시 제안",
+    "작품 구매",
+    "공모전 문의"
+  ],
   "portfolioPdf": ""
 }

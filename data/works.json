@@ -29,7 +29,16 @@
       "size": "74×34×21cm",
       "summary": "씨앗의 핵이 단단한 표피를 벗어나려는 몸부림과 생명의 폭발적 에너지를 담은 대형 건칠 작품입니다.",
       "story": "겉면은 주칠과 초록색 옻칠을 바른 뒤 연마해 두 가지 색이 함께 보이게 했습니다. 두부 교칠과 금분, 숯가루로 거칠게 처리한 면, 여러 색 옻칠 위에 동박과 난각으로 원의 테두리를 두른 안쪽이 극적인 질감의 대비를 이룹니다. 침잠하는 옻칠과 빛나는 금속박이 한 화면에서 부딪히며 생명이 태어나는 순간의 사투를 보여 줍니다.",
-      "images": []
+      "images": [
+        {
+          "src": "assets/works/tansaeng.webp",
+          "thumb": "assets/works/thumbs/tansaeng.webp",
+          "w": 1856,
+          "h": 2304,
+          "alt": "주황과 파랑 옻칠, 난각 띠가 안쪽을 채운 타원형 대형 건칠 작품 〈탄생〉",
+          "cutout": true
+        }
+      ]
     },
     {
       "id": "sisyphus",
@@ -41,8 +50,23 @@
       "summary": "씨앗이 삶의 고통과 마주하는 단계를, 같은 형벌을 끝없이 되풀이하는 시지프스에 빗댄 작품입니다.",
       "story": "흑칠 위에 감입한 순은선은 철조망처럼 얽히고 가시를 떠올리게 하며, 씨앗을 둘러싼 억압을 눈에 보이는 형상으로 바꿉니다. 함의 안쪽에는 자개와 동박으로 바깥의 선과 이어지는 또 다른 층의 공간을 만들었습니다. 겉에서 겪은 상처가 안에 기억으로 쌓이고, 봉안된 기억은 다시 바깥의 모습으로 드러납니다.",
       "images": [
-        { "src": "assets/works/sisyphus-1.webp", "thumb": "assets/works/thumbs/sisyphus-1.webp", "w": 2040, "h": 2048, "alt": "흑칠 위에 순은선이 가시처럼 얽힌 구형 건칠 함 〈시지프스〉", "caption": "외부", "cutout": true },
-        { "src": "assets/works/sisyphus-2.webp", "thumb": "assets/works/thumbs/sisyphus-2.webp", "w": 2400, "h": 1942, "alt": "〈시지프스〉 함의 안쪽, 자개와 동박으로 장식한 면", "caption": "내부" }
+        {
+          "src": "assets/works/sisyphus-1.webp",
+          "thumb": "assets/works/thumbs/sisyphus-1.webp",
+          "w": 2040,
+          "h": 2048,
+          "alt": "흑칠 위에 순은선이 가시처럼 얽힌 구형 건칠 함 〈시지프스〉",
+          "caption": "외부",
+          "cutout": true
+        },
+        {
+          "src": "assets/works/sisyphus-2.webp",
+          "thumb": "assets/works/thumbs/sisyphus-2.webp",
+          "w": 2400,
+          "h": 1942,
+          "alt": "〈시지프스〉 함의 안쪽, 자개와 동박으로 장식한 면",
+          "caption": "내부"
+        }
       ]
     },
     {
@@ -55,7 +79,15 @@
       "summary": "씨앗이 발아하기 위해 겪는 저항과 몸부림을, 얽힌 미로와 매듭으로 표현한 작품입니다.",
       "story": "함의 테두리를 두껍게 감은 실은 고르디우스의 매듭과 뫼비우스의 띠에서 착안했습니다. 시작과 끝을 알 수 없는 미로는 씨앗을 둘러싼 삶의 구조를 상징합니다. 칠을 올리고 갈아내기를 거듭하며 생긴 불규칙한 무늬는 시간 속에서 남은 상처의 흔적입니다.",
       "images": [
-        { "src": "assets/works/miro.webp", "thumb": "assets/works/thumbs/miro.webp", "w": 2048, "h": 1766, "alt": "검은 구형 함을 은박 입힌 두꺼운 실이 감고 있는 건칠 함 〈미로〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/miro.webp",
+          "thumb": "assets/works/thumbs/miro.webp",
+          "w": 2048,
+          "h": 1766,
+          "alt": "검은 구형 함을 은박 입힌 두꺼운 실이 감고 있는 건칠 함 〈미로〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     },
     {
@@ -68,7 +100,15 @@
       "summary": "씨앗이 싹을 틔우고 가지를 뻗어 열매를 맺는 생명의 과정을 표현한 작품입니다.",
       "story": "초록색 칠은 생명의 성장과 생명력을 상징하며, 앞선 작품의 어둡고 긴장된 색과 대비됩니다. 야광패의 끊음질과 주름질은 하나의 중심에서 바깥으로 퍼져 나가는 파동을 이루어, 생명이 외부로 확장되는 모습을 보여 줍니다.",
       "images": [
-        { "src": "assets/works/gyeolsil.webp", "thumb": "assets/works/thumbs/gyeolsil.webp", "w": 2048, "h": 2034, "alt": "초록 옻칠 위에 금박과 자개 원무늬가 퍼져 나가는 구형 건칠 함 〈결실〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/gyeolsil.webp",
+          "thumb": "assets/works/thumbs/gyeolsil.webp",
+          "w": 2048,
+          "h": 2034,
+          "alt": "초록 옻칠 위에 금박과 자개 원무늬가 퍼져 나가는 구형 건칠 함 〈결실〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     },
     {
@@ -81,7 +121,15 @@
       "summary": "하나의 열매 안에서 새로운 씨앗이 자라고, 그 씨앗이 다시 열매에 이르는 생명의 순환을 담은 함입니다.",
       "story": "노란 옻칠 위에 금색 알루미늄박을 붙이고, 칠과 연마를 반복해 박을 불규칙하게 드러냈습니다. 금빛은 칠층 사이에서 부분적으로 나타납니다. 고통이 완전히 사라진 뒤에야 희망이 찾아오는 것이 아니라, 상처의 흔적이 남아 있는 삶 속에서도 희망이 발견될 수 있다는 생각을 담았습니다.",
       "images": [
-        { "src": "assets/works/yeolmae.webp", "thumb": "assets/works/thumbs/yeolmae.webp", "w": 2048, "h": 2038, "alt": "금빛 박이 번진 노란 건칠 함이 열려 검은 안쪽이 보이는 〈열매〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/yeolmae.webp",
+          "thumb": "assets/works/thumbs/yeolmae.webp",
+          "w": 2048,
+          "h": 2038,
+          "alt": "금빛 박이 번진 노란 건칠 함이 열려 검은 안쪽이 보이는 〈열매〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     },
     {
@@ -94,7 +142,15 @@
       "summary": "생명이 발아하기 이전의 원초적 상태와 근원적 에너지를 표현한, 씨앗 연작의 출발점입니다.",
       "story": "거칠고 불규칙한 표면과 여러 색의 겹침 속에서 생성과 부패가 함께 드러납니다. 생명의 시작과 부패가 하나의 순환 안에서 공존하듯, 함은 시작과 끝, 기억과 망각 사이의 경계를 받아들이는 공간이 됩니다.",
       "images": [
-        { "src": "assets/works/geunwon.webp", "thumb": "assets/works/thumbs/geunwon.webp", "w": 2048, "h": 2048, "alt": "붉은 갈색 옻칠에 금분이 겹겹이 비치는 건칠 함 〈근원〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/geunwon.webp",
+          "thumb": "assets/works/thumbs/geunwon.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "붉은 갈색 옻칠에 금분이 겹겹이 비치는 건칠 함 〈근원〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     },
     {
@@ -107,7 +163,15 @@
       "summary": "수분이 빠져나가며 마르고 주름지는 노화의 과정을 팥 모양의 함으로 표현한 작품입니다.",
       "story": "팥색 칠면의 불규칙한 균열 사이에 순은박을 넣어, 상처를 감추지 않고 빛의 흔적으로 드러냈습니다. 균열은 끝을 알리는 표식이 아니라 한 존재가 살아온 시간의 기록입니다. 상처를 봉안하고 애도하는 일은 과거에 머물기 위함이 아니라, 변화한 자신을 인정하고 다시 일상으로 나아가기 위한 과정입니다.",
       "images": [
-        { "src": "assets/works/nohwa.webp", "thumb": "assets/works/thumbs/nohwa.webp", "w": 2048, "h": 2034, "alt": "금과 은빛 균열이 갈라진 갈색 옻칠 면의 팥 모양 건칠 함 〈노화〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/nohwa.webp",
+          "thumb": "assets/works/thumbs/nohwa.webp",
+          "w": 2048,
+          "h": 2034,
+          "alt": "금과 은빛 균열이 갈라진 갈색 옻칠 면의 팥 모양 건칠 함 〈노화〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     },
     {
@@ -120,7 +184,15 @@
       "summary": "씨앗이 표면에 떨어질 때의 떨림과 파동을 담은 건칠 함 네 점입니다.",
       "story": "함 윗면에 빨강·노랑·파랑 삼원색 칠가루를 뿌려 희망의 울림을 표현했습니다. 검고 깊은 우주 같은 흑칠 표면에 떨어진 수많은 씨앗이 크고 작은 파동으로 퍼져 한 사람의 세계에 영향을 미칩니다. 폭력의 희생자들을 기억하며 함 안에 쌀, 동전, 국화를 넣어 애도의 뜻을 담았습니다.",
       "images": [
-        { "src": "assets/works/ullim.webp", "thumb": "assets/works/thumbs/ullim.webp", "w": 1620, "h": 2048, "alt": "네 개의 검은 건칠 함이 일렬로 쌓여 있고 윗면에 칠가루 원이 번진 〈울림〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/ullim.webp",
+          "thumb": "assets/works/thumbs/ullim.webp",
+          "w": 1620,
+          "h": 2048,
+          "alt": "네 개의 검은 건칠 함이 일렬로 쌓여 있고 윗면에 칠가루 원이 번진 〈울림〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     },
     {
@@ -133,7 +205,14 @@
       "summary": "파란 옻칠 바탕에 마블링 기법을 적용해, 사고 당시 바다 위에 떠오른 기름띠를 표현했습니다.",
       "story": "",
       "images": [
-        { "src": "assets/works/yuchul-gireum.webp", "thumb": "assets/works/thumbs/yuchul-gireum.webp", "w": 2048, "h": 2048, "alt": "파란 옻칠 위에 검은 얼룩이 번진 〈유출 연작 — 기름〉", "caption": "" }
+        {
+          "src": "assets/works/yuchul-gireum.webp",
+          "thumb": "assets/works/thumbs/yuchul-gireum.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "파란 옻칠 위에 검은 얼룩이 번진 〈유출 연작 — 기름〉",
+          "caption": ""
+        }
       ]
     },
     {
@@ -146,7 +225,14 @@
       "summary": "바다 위에 퍼진 기름을 위에서 내려다본 사진을 바탕으로, 나전의 끊음질과 옻칠로 재현했습니다.",
       "story": "",
       "images": [
-        { "src": "assets/works/yuchul-bada.webp", "thumb": "assets/works/thumbs/yuchul-bada.webp", "w": 2048, "h": 2048, "alt": "검은 옻칠 바탕에 자개 끊음질로 기름띠를 표현한 〈유출 연작 — 바다〉", "caption": "" }
+        {
+          "src": "assets/works/yuchul-bada.webp",
+          "thumb": "assets/works/thumbs/yuchul-bada.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "검은 옻칠 바탕에 자개 끊음질로 기름띠를 표현한 〈유출 연작 — 바다〉",
+          "caption": ""
+        }
       ]
     },
     {
@@ -159,7 +245,14 @@
       "summary": "허베이 스피리트호를 나전과 동선, 동박, 색 옻칠로 표현했습니다.",
       "story": "대중에게는 ‘태안 기름 유출 사고’라는 이름으로 지명이 각인되었지만, 사고의 원인이 유조선에 있었음을 작업으로 되새기고자 했습니다.",
       "images": [
-        { "src": "assets/works/yuchul-bae.webp", "thumb": "assets/works/thumbs/yuchul-bae.webp", "w": 2048, "h": 2048, "alt": "검은 바탕 위의 유조선과 흘러내리는 자개 기름 줄기를 표현한 〈유출 연작 — 배〉", "caption": "" }
+        {
+          "src": "assets/works/yuchul-bae.webp",
+          "thumb": "assets/works/thumbs/yuchul-bae.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "검은 바탕 위의 유조선과 흘러내리는 자개 기름 줄기를 표현한 〈유출 연작 — 배〉",
+          "caption": ""
+        }
       ]
     },
     {
@@ -169,11 +262,17 @@
       "year": "2024",
       "materials": "나무, 삼베, 옻칠, 자개, 메추리알 난각",
       "size": "15×15cm",
-      "_check": "논문 도판 목록에는 5x15cm로 표기되어 있어 확인 필요",
       "summary": "유출된 기름을 자원봉사자가 긴 장대로 걷어내는 모습을 자개와 난각으로 표현했습니다.",
       "story": "바닷가의 바위는 색패와 뉴질랜드패 두 가지를 짜 맞추어 주름질했고, 뒷부분의 바위는 테두리만 실톱으로 주름질해 한국 수묵화의 느낌을 살렸습니다. 자원봉사자와 기름종이는 흰 메추리알 난각으로 표현해 자개와 재료의 차별을 두었습니다.",
       "images": [
-        { "src": "assets/works/yuchul-saram.webp", "thumb": "assets/works/thumbs/yuchul-saram.webp", "w": 2048, "h": 2048, "alt": "자개 바위 위에서 기름을 걷어내는 사람을 난각으로 표현한 〈유출 연작 — 사람〉", "caption": "" }
+        {
+          "src": "assets/works/yuchul-saram.webp",
+          "thumb": "assets/works/thumbs/yuchul-saram.webp",
+          "w": 2048,
+          "h": 2048,
+          "alt": "자개 바위 위에서 기름을 걷어내는 사람을 난각으로 표현한 〈유출 연작 — 사람〉",
+          "caption": ""
+        }
       ]
     },
     {
@@ -186,7 +285,15 @@
       "summary": "유출된 원유에 오염되어 날지 못한 채 죽은 새를, 조개를 원재료로 한 나전으로 표현했습니다.",
       "story": "기름이 묻은 깃털은 흑칠로, 묻지 않은 부분은 나전으로 구현했습니다. 새를 제외한 배경은 두부와 흑칠을 섞은 교칠 기법으로 거칠고 두껍게 처리해, 잘 연마되어 거울처럼 매끄럽고 빛나는 흑칠(새에 묻은 원유)과 뚜렷하게 대비시켰습니다.",
       "images": [
-        { "src": "assets/works/yuchul-sae.webp", "thumb": "assets/works/thumbs/yuchul-sae.webp", "w": 1856, "h": 2304, "alt": "거친 회색 교칠 배경 위의 자개로 만든 새 〈유출 연작 — 새〉", "caption": "", "cutout": true }
+        {
+          "src": "assets/works/yuchul-sae.webp",
+          "thumb": "assets/works/thumbs/yuchul-sae.webp",
+          "w": 1856,
+          "h": 2304,
+          "alt": "거친 회색 교칠 배경 위의 자개로 만든 새 〈유출 연작 — 새〉",
+          "caption": "",
+          "cutout": true
+        }
       ]
     }
   ]
